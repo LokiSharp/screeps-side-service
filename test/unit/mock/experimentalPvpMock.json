@@ -1,0 +1,26 @@
+{
+  "ok": 1,
+  "pvp": {
+    "shard0": {
+      "time": 0,
+      "rooms": [
+        {
+          "_id": "W0N0",
+          "lastPvpTime": 0
+        }
+      ]
+    },
+    "shard1": {
+      "time": 0,
+      "rooms": []
+    },
+    "shard2": {
+      "time": 0,
+      "rooms": []
+    },
+    "shard3": {
+      "time": 0,
+      "rooms": []
+    }
+  }
+}

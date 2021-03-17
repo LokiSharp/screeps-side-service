@@ -1,0 +1,28 @@
+{
+  "ok": 1,
+  "list": [
+    {
+      "_id": "userA",
+      "season": "2020-01",
+      "user": "userA",
+      "score": 100,
+      "rank": 1
+    }
+  ],
+  "count": 0,
+  "users": {
+    "userA": {
+      "_id": "userA",
+      "username": "userA",
+      "badge": {
+        "type": 1,
+        "color1": "#000000",
+        "color2": "#000000",
+        "color3": "#000000",
+        "param": 0,
+        "flip": true
+      },
+      "gcl": 100000
+    }
+  }
+}

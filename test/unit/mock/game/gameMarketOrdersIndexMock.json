@@ -1,0 +1,545 @@
+{
+  "ok": 1,
+  "list": [
+    {
+      "_id": "ZH2O",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "KH",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "biomass",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "ZHO2",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "XLHO2",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "KH2O",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "XZHO2",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "LH2O",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "UH",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "ZH",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "extract",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "organoid",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "machine",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "ghodium_melt",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "fixtures",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "XZH2O",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "concentrate",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "ZO",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "phlegm",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "UL",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "LHO2",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "OH",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "alloy",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "battery",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "power",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "ops",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "XLH2O",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "muscle",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "silicon",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "GHO2",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "circuit",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "Z",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "metal",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "H",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "XUH2O",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "keanium_bar",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "KO",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "crystal",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "oxidant",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "G",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "XGH2O",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "cpuUnlock",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "composite",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "LO",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "switch",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "microchip",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "X",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "UHO2",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "reductant",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "KHO2",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "K",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "accessKey",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "essence",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "lemergium_bar",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "pixel",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "U",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "tissue",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "XUHO2",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "UO",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "energy",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "ZK",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "zynthium_bar",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "O",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "wire",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "purifier",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "XKHO2",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "GH2O",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "organism",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "GO",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "XKH2O",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "emanation",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "utrium_bar",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "LH",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "UH2O",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "liquid",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "L",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "device",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "frame",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "transistor",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "mist",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "hydraulics",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "tube",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "GH",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "cell",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "spirit",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "XGHO2",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "condensate",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "accessKey",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "cpuUnlock",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    },
+    {
+      "_id": "pixel",
+      "count": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    }
+  ]
+}

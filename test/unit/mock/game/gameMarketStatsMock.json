@@ -1,0 +1,14 @@
+{
+  "ok": 1,
+  "stats": [
+    {
+      "_id": "_id",
+      "resourceType": "resourceType",
+      "date": "2020-01-01",
+      "transactions": 0,
+      "volume": 0,
+      "avgPrice": 0,
+      "stddevPrice": 0
+    }
+  ]
+}

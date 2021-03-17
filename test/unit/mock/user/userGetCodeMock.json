@@ -1,0 +1,7 @@
+{
+  "ok": 1,
+  "branch": "default",
+  "modules": {
+    "main": "module.exports.loop = function () {\n\n\n}"
+  }
+}

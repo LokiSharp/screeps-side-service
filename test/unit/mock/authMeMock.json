@@ -1,0 +1,47 @@
+{
+  "ok": 1,
+  "_id": "id",
+  "email": "email",
+  "username": "username",
+  "cpu": 20,
+  "badge": {
+    "type": 1,
+    "color1": "#000000",
+    "color2": "#000000",
+    "color3": "#000000",
+    "param": 0,
+    "flip": false
+  },
+  "password": true,
+  "lastRespawnDate": 0,
+  "notifyPrefs": {
+    "disabled": false,
+    "disabledOnMessages": false,
+    "sendOnline": true,
+    "interval": 5,
+    "errorsInterval": 5
+  },
+  "gcl": 0,
+  "credits": 0,
+  "money": 0,
+  "subscriptionTokens": 0,
+  "cpuShard": {
+    "shard3": 20
+  },
+  "cpuShardUpdatedTime": 0,
+  "runtime": {},
+  "powerExperimentations": 30,
+  "powerExperimentationTime": 0,
+  "resources": {
+    "cpuUnlock": 0,
+    "pixel": 2029
+  },
+  "playerColor": null,
+  "promoPixels": null,
+  "steam": {
+    "id": "0",
+    "displayName": "username",
+    "ownership": [0],
+    "steamProfileLinkHidden": 0
+  }
+}

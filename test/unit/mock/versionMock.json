@@ -1,0 +1,29 @@
+{
+  "ok": 1,
+  "package": 201,
+  "protocol": 14,
+  "serverData": {
+    "customObjectTypes": {},
+    "historyChunkSize": 100,
+    "renderer": {
+      "resources": {},
+      "metadata": {}
+    },
+    "features": [
+      {
+        "name": "arena-preorder",
+        "version": 1,
+        "menuData": []
+      },
+      {
+        "name": "auth",
+        "version": 1
+      }
+    ],
+    "shards": ["shard0", "shard1", "shard2", "shard3"]
+  },
+  "seasonAccessCost": 3,
+  "decorationConvertationCost": 400,
+  "decorationPixelizationCost": 500,
+  "users": 100
+}

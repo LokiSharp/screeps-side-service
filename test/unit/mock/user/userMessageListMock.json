@@ -1,0 +1,19 @@
+{
+  "ok": 1,
+  "messages": [
+    {
+      "_id": "inMessage",
+      "date": "2020-01-01T00:00:00.000Z",
+      "type": "in",
+      "text": "inMessage",
+      "unread": false
+    },
+    {
+      "_id": "outMessage",
+      "date": "2020-01-01T00:00:00.000Z",
+      "type": "out",
+      "text": "outMessage",
+      "unread": false
+    }
+  ]
+}

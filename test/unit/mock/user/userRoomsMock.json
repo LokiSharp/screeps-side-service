@@ -1,0 +1,15 @@
+{
+  "ok": 1,
+  "shards": {
+    "shard0": [],
+    "shard1": [],
+    "shard2": [],
+    "shard3": []
+  },
+  "reservations": {
+    "shard0": [],
+    "shard1": [],
+    "shard2": [],
+    "shard3": []
+  }
+}

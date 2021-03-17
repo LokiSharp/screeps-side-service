@@ -1,0 +1,15 @@
+{
+  "ok": 1,
+  "result": { "ok": 1, "n": 1 },
+  "ops": [
+    {
+      "user": "user",
+      "expression": "Memory['userSetMemory']= {\"UserSetMemory\":true}",
+      "shard": "shard",
+      "hidden": true,
+      "_id": "id"
+    }
+  ],
+  "insertedCount": 1,
+  "insertedIds": ["insertedId"]
+}

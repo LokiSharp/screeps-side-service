@@ -1,3 +1,1 @@
-import RawApi from "./RawApi";
-
-export default RawApi;
+export { RawApi } from "./api/RawApi";

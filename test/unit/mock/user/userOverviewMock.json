@@ -1,0 +1,27 @@
+{
+  "ok": 1,
+  "statsMax": 0,
+  "totals": {},
+  "shards": {
+    "shard0": {
+      "rooms": [],
+      "stats": {},
+      "gametimes": [0, null, null, null, null, null, null, null]
+    },
+    "shard1": {
+      "rooms": [],
+      "stats": {},
+      "gametimes": [0, null, null, null, null, null, null, null]
+    },
+    "shard2": {
+      "rooms": [],
+      "stats": {},
+      "gametimes": [0, null, null, null, null, null, null, null]
+    },
+    "shard3": {
+      "rooms": [],
+      "stats": {},
+      "gametimes": [0, null, null, null, null, null, null, null]
+    }
+  }
+}

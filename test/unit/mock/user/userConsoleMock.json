@@ -1,0 +1,17 @@
+{
+  "ok": 1,
+  "result": {
+    "ok": 1,
+    "n": 1
+  },
+  "ops": [
+    {
+      "user": "user",
+      "expression": "expression",
+      "shard": "shard",
+      "_id": "_id"
+    }
+  ],
+  "insertedCount": 1,
+  "insertedIds": ["insertedIds"]
+}

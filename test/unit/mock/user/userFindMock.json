@@ -1,0 +1,20 @@
+{
+  "ok": 1,
+  "user": {
+    "_id": "id",
+    "username": "username",
+    "badge": {
+      "type": 1,
+      "color1": "#000000",
+      "color2": "#000000",
+      "color3": "#000000",
+      "param": 0,
+      "flip": false
+    },
+    "steam": {
+      "id": "id"
+    },
+    "gcl": 0,
+    "power": 0
+  }
+}

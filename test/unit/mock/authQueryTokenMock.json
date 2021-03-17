@@ -1,0 +1,9 @@
+{
+  "ok": 1,
+  "token": {
+    "_id": "_id",
+    "full": true,
+    "token": "token",
+    "description": "description"
+  }
+}

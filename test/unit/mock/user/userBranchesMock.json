@@ -1,0 +1,11 @@
+{
+  "ok": 1,
+  "list": [
+    {
+      "_id": "default",
+      "branch": "default",
+      "activeWorld": true,
+      "activeSim": false
+    }
+  ]
+}

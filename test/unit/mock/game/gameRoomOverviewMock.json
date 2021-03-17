@@ -1,0 +1,274 @@
+{
+  "ok": 1,
+  "owner": null,
+  "stats": {
+    "energyHarvested": [
+      {
+        "value": 0,
+        "endTime": 1
+      },
+      {
+        "value": 0,
+        "endTime": 2
+      },
+      {
+        "value": 0,
+        "endTime": 3
+      },
+      {
+        "value": 0,
+        "endTime": 4
+      },
+      {
+        "value": 0,
+        "endTime": 5
+      },
+      {
+        "value": 0,
+        "endTime": 6
+      },
+      {
+        "value": 0,
+        "endTime": 7
+      },
+      {
+        "value": 0,
+        "endTime": 8
+      }
+    ],
+    "energyConstruction": [
+      {
+        "value": 0,
+        "endTime": 1
+      },
+      {
+        "value": 0,
+        "endTime": 2
+      },
+      {
+        "value": 0,
+        "endTime": 3
+      },
+      {
+        "value": 0,
+        "endTime": 4
+      },
+      {
+        "value": 0,
+        "endTime": 5
+      },
+      {
+        "value": 0,
+        "endTime": 6
+      },
+      {
+        "value": 0,
+        "endTime": 7
+      },
+      {
+        "value": 0,
+        "endTime": 8
+      }
+    ],
+    "energyCreeps": [
+      {
+        "value": 0,
+        "endTime": 1
+      },
+      {
+        "value": 0,
+        "endTime": 2
+      },
+      {
+        "value": 0,
+        "endTime": 3
+      },
+      {
+        "value": 0,
+        "endTime": 4
+      },
+      {
+        "value": 0,
+        "endTime": 5
+      },
+      {
+        "value": 0,
+        "endTime": 6
+      },
+      {
+        "value": 0,
+        "endTime": 7
+      },
+      {
+        "value": 0,
+        "endTime": 8
+      }
+    ],
+    "energyControl": [
+      {
+        "value": 0,
+        "endTime": 1
+      },
+      {
+        "value": 0,
+        "endTime": 2
+      },
+      {
+        "value": 0,
+        "endTime": 3
+      },
+      {
+        "value": 0,
+        "endTime": 4
+      },
+      {
+        "value": 0,
+        "endTime": 5
+      },
+      {
+        "value": 0,
+        "endTime": 6
+      },
+      {
+        "value": 0,
+        "endTime": 7
+      },
+      {
+        "value": 0,
+        "endTime": 8
+      }
+    ],
+    "creepsProduced": [
+      {
+        "value": 0,
+        "endTime": 1
+      },
+      {
+        "value": 0,
+        "endTime": 2
+      },
+      {
+        "value": 0,
+        "endTime": 3
+      },
+      {
+        "value": 0,
+        "endTime": 4
+      },
+      {
+        "value": 0,
+        "endTime": 5
+      },
+      {
+        "value": 0,
+        "endTime": 6
+      },
+      {
+        "value": 0,
+        "endTime": 7
+      },
+      {
+        "value": 0,
+        "endTime": 8
+      }
+    ],
+    "creepsLost": [
+      {
+        "value": 0,
+        "endTime": 1
+      },
+      {
+        "value": 0,
+        "endTime": 2
+      },
+      {
+        "value": 0,
+        "endTime": 3
+      },
+      {
+        "value": 0,
+        "endTime": 4
+      },
+      {
+        "value": 0,
+        "endTime": 5
+      },
+      {
+        "value": 0,
+        "endTime": 6
+      },
+      {
+        "value": 0,
+        "endTime": 7
+      },
+      {
+        "value": 0,
+        "endTime": 8
+      }
+    ],
+    "powerProcessed": [
+      {
+        "value": 0,
+        "endTime": 1
+      },
+      {
+        "value": 0,
+        "endTime": 2
+      },
+      {
+        "value": 0,
+        "endTime": 3
+      },
+      {
+        "value": 0,
+        "endTime": 4
+      },
+      {
+        "value": 0,
+        "endTime": 5
+      },
+      {
+        "value": 0,
+        "endTime": 6
+      },
+      {
+        "value": 0,
+        "endTime": 7
+      },
+      {
+        "value": 0,
+        "endTime": 8
+      }
+    ]
+  },
+  "statsMax": {
+    "creepsProduced180": 0,
+    "energy1440": 0,
+    "energyCreeps1440": 0,
+    "energyControl1440": 0,
+    "energy180": 0,
+    "energyHarvested180": 0,
+    "energyCreeps180": 0,
+    "energyConstruction180": 0,
+    "power1440": 0,
+    "powerProcessed1440": 0,
+    "power8": 0,
+    "powerProcessed8": 0,
+    "energyConstruction1440": 0,
+    "energyHarvested1440": 0,
+    "creepsLost1440": 0,
+    "creepsProduced1440": 0,
+    "creepsLost8": 0,
+    "creepsLost180": 0,
+    "energy8": 0,
+    "energyCreeps8": 0,
+    "energyControl8": 0,
+    "energyHarvested8": 0,
+    "energyControl180": 0,
+    "power180": 0,
+    "powerProcessed180": 0,
+    "energyConstruction8": 0,
+    "creepsProduced8": 0
+  },
+  "totals": {}
+}

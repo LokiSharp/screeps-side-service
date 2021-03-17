@@ -1,0 +1,33 @@
+{
+  "timestamp": 0,
+  "room": "W0N0",
+  "base": 0,
+  "ticks": {
+    "0": {
+      "sourceA": {
+        "_id": "sourceA",
+        "room": "W0N0",
+        "type": "source",
+        "x": 10,
+        "y": 10,
+        "energy": 3000,
+        "energyCapacity": 3000,
+        "ticksToRegeneration": 300,
+        "invaderHarvested": 53268,
+        "nextRegenerationTime": 1000
+      },
+      "sourceB": {
+        "_id": "sourceB",
+        "room": "W0N0",
+        "type": "source",
+        "x": 40,
+        "y": 40,
+        "energy": 3000,
+        "energyCapacity": 3000,
+        "ticksToRegeneration": 300,
+        "invaderHarvested": 48654,
+        "nextRegenerationTime": 1000
+      }
+    }
+  }
+}

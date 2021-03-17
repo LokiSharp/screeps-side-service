@@ -1,0 +1,27 @@
+{
+  "ok": 1,
+  "page": 0,
+  "list": [
+    {
+      "_id": "_id",
+      "date": "2020-01-01T00:00:0.000Z",
+      "tick": 0,
+      "user": "user",
+      "type": "market.buy",
+      "balance": 0,
+      "change": 0,
+      "market": {
+        "resourceType": "energy",
+        "roomName": "W0N0",
+        "targetRoomName": "W1N1",
+        "price": 1,
+        "npc": false,
+        "owner": "owner",
+        "dealer": "dealer",
+        "amount": 1
+      },
+      "shard": "shard"
+    }
+  ],
+  "hasMore": true
+}

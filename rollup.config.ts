@@ -6,6 +6,8 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import sourceMaps from "rollup-plugin-sourcemaps";
 import typescript from "@rollup/plugin-typescript";
 import json from "@rollup/plugin-json";
+import builtins from "rollup-plugin-node-builtins";
+import globals from "rollup-plugin-node-globals";
 
 const pkg = require("./package.json");
 
@@ -23,6 +25,8 @@ export default {
     include: "src/**"
   },
   plugins: [
+    globals(),
+    builtins(),
     // Allow json resolution
     json(),
     // Compile TypeScript files

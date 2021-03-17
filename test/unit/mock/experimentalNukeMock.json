@@ -1,0 +1,19 @@
+{
+  "ok": 1,
+  "nukes": {
+    "shard0": [
+      {
+        "_id": "_id",
+        "type": "nuke",
+        "room": "W0N0",
+        "x": 25,
+        "y": 25,
+        "landTime": 0,
+        "launchRoomName": "W1N1"
+      }
+    ],
+    "shard1": [],
+    "shard2": [],
+    "shard3": []
+  }
+}

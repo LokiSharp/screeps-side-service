@@ -1,0 +1,31 @@
+{
+  "ok": 1,
+  "messages": [
+    {
+      "_id": "_id",
+      "message": {
+        "_id": "_id",
+        "user": "user",
+        "respondent": "respondent",
+        "date": "2020-01-01T00:00:00.000Z",
+        "type": "in",
+        "text": "inMessage",
+        "unread": false
+      }
+    }
+  ],
+  "users": {
+    "_id": {
+      "_id": "_id",
+      "username": "username",
+      "badge": {
+        "type": 1,
+        "color1": "#000000",
+        "color2": "#000000",
+        "color3": "#000000",
+        "param": 0,
+        "flip": false
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "ok": 1,
+  "stats": {
+    "creepsProduced": 0,
+    "energyConstruction": 0,
+    "powerProcessed": 0,
+    "energyControl": 0,
+    "energyHarvested": 0,
+    "energyCreeps": 0,
+    "creepsLost": 0
+  }
+}
