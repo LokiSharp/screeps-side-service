@@ -66,9 +66,10 @@ export class RawApi {
       mutableDefaults: true,
       prefixUrl: baseAddress,
       hooks: {
-        beforeRequest: [
-          options => {
-            console.log(options.method, options.path);
+        beforeRetry: [
+          async (options, error, retryCount) => {
+            console.log("retryCount:\t", retryCount);
+            await this.sleep(30 * 1000);
           }
         ]
       }
@@ -1007,6 +1008,7 @@ export class RawApi {
     return this.client
       .get("api/game/room-terrain", {
         searchParams: {
+          encoded: true,
           room,
           shard
         }
@@ -1160,4 +1162,13 @@ export class RawApi {
     return this.client.get("api/experimental/nukes").json();
   }
   // endregion
+
+  /**
+   * 休眠
+   * @param ms 休眠时长
+   * @return Promise<void>
+   */
+  public async sleep(ms: number): Promise<void> {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
 }

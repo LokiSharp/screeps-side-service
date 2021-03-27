@@ -485,18 +485,21 @@ interface GameRoomDecorationsResult {
 
 interface GameRoomObjectsResult {
   ok: number;
-  objects: unknown[];
+  objects: RoomObjects[];
   users: { _id: string; username: string }[];
+}
+
+interface RoomObjects {
+  _id: string;
+  type: string;
+  room: string;
+  x: number;
+  y: number;
 }
 
 interface GameRoomTerrain {
   ok: number;
-  terrain: {
-    room: string;
-    x: unknown;
-    y: unknown;
-    type: string;
-  }[];
+  terrain: { _id: string; room: string; terrain: string; type: string }[];
 }
 
 interface GameRoomStatus {
@@ -548,7 +551,7 @@ interface GameMarketMyOrdersResult {
   shards: Record<string, MyOrder[]>;
 }
 
-interface Order {
+interface MarketOrder {
   _id: string;
   type: string;
   amount: number;
@@ -559,7 +562,7 @@ interface Order {
 
 interface GameMarketOrdersResult {
   ok: number;
-  list: Order[];
+  list: MarketOrder[];
 }
 
 interface OrderStats {
@@ -632,3 +635,27 @@ interface RateLimit {
 
 type RatePeriod = "day" | "hour" | "minute";
 type Method = "GET" | "POST";
+
+interface RoomObjectDoc extends RoomObjects, Doc {
+  id: string;
+  shard: string;
+  type: StructureConstant | "source" | "mineral";
+  room: string;
+  x: number;
+  y: number;
+}
+
+interface RoomDoc extends Doc {
+  room: string;
+  shard: string;
+  terrain: string;
+  updateTime: number;
+}
+
+interface Doc {
+  _id: string;
+}
+
+interface PortalDoc extends RoomObjects, Doc {
+  other: { disabled?: boolean; destination: { shard?: string; room: string; x?: number; y?: number } };
+}

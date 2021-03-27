@@ -1,13 +1,8 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import commonjs from "@rollup/plugin-commonjs";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import sourceMaps from "rollup-plugin-sourcemaps";
 import typescript from "@rollup/plugin-typescript";
 import json from "@rollup/plugin-json";
-import builtins from "rollup-plugin-node-builtins";
-import globals from "rollup-plugin-node-globals";
 
 const pkg = require("./package.json");
 
@@ -24,13 +19,11 @@ export default {
   watch: {
     include: "src/**"
   },
+
   plugins: [
-    globals(),
-    builtins(),
     // Allow json resolution
     json(),
     // Compile TypeScript files
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     typescript(),
     // Allow bundling cjs modules (unlike webpack, rollup doesn't understand cjs)
     commonjs(),
@@ -38,7 +31,6 @@ export default {
     // which external modules to include in the bundle
     // https://github.com/rollup/rollup-plugin-node-resolve#usage
     nodeResolve(),
-
     // Resolve source maps to the original source
     sourceMaps()
   ]

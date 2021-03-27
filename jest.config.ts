@@ -8,6 +8,7 @@ const config: Config.InitialOptions = {
   transform: {
     "^.+\\.tsx?$": "ts-jest"
   },
+  setupFilesAfterEnv: ["<rootDir>/test/setup.ts"],
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths || {}, { prefix: "<rootDir>/" }),
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"]
 };
