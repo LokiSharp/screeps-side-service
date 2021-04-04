@@ -1,10 +1,25 @@
 import { ScreepsApi } from "@/api/ScreepsApi";
+import { createConnection } from "typeorm";
+import { Portal, PortalEntity } from "@/entity/Portal";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import * as PromisePool from "@supercharge/promise-pool";
 
 import { Pool } from "pg";
 import * as fs from "fs";
+
+const connection = createConnection({
+  type: "postgres",
+  host: process.env.PG_HOST,
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  port: parseInt(process.env.PG_PORT!),
+  username: process.env.PG_USER,
+  password: process.env.PG_PASSWORD,
+  database: process.env.PG_DATABASE,
+  entities: [PortalEntity],
+  synchronize: true,
+  logging: false
+});
 
 const pool = new Pool({
   host: process.env.PG_HOST,
@@ -119,7 +134,7 @@ export class CrossShard {
     try {
       await pool.query(
         `INSERT INTO room (room, shard, terrain, _id, updatedtime) VALUES
-           ($1, $2, $3, $4, $5);`,
+          ($1, $2, $3, $4, $5);`,
         [roomName, shard, terrain, shard + roomName, Date.now()]
       );
     } catch (err) {
@@ -195,6 +210,51 @@ export class CrossShard {
       console.log("JSON data is saved.");
     } catch (err) {
       console.error(err);
+    }
+  }
+
+  /**
+   * 查找并插入 Portal
+   * @return Promise<void>
+   */
+  public async selectAndInsertPortal(): Promise<void> {
+    // const portalRepository = (await connection).getRepository<Portal>(PortalEntity);
+    let portals: PortalDoc[] = [];
+    await pool
+      .query(`SELECT type, id, shard, room, x, y, other, _id FROM room_object WHERE type = $1;`, ["portal"])
+      .then(res => {
+        portals = (res.rows as unknown) as PortalDoc[];
+      });
+    for (const portal of portals) {
+      const { id, shard, room, x, y, _id, other } = portal;
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      const parsedRoom = /^([WE])([0-9]+)([NS])([0-9]+)$/.exec(room)!;
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      const parsedDestination = /^([WE])([0-9]+)([NS])([0-9]+)$/.exec(other.destination.room || room)!;
+
+      const portalDTO: Portal = {
+        id,
+        shard,
+        room,
+        x,
+        y,
+        longitudeTag: parsedRoom[1],
+        longitude: parseInt(parsedRoom[2]),
+        latitudeTag: parsedRoom[3],
+        latitude: parseInt(parsedRoom[4]),
+        disabled: other.disabled === true,
+        destinationShard: other.destination.shard || shard,
+        destinationRoom: other.destination.room || room,
+        destinationX: other.destination.x || x,
+        destinationY: other.destination.y || y,
+        destinationLongitudeTag: parsedDestination[1],
+        destinationLongitude: parseInt(parsedDestination[2]),
+        destinationLatitudeTag: parsedDestination[3],
+        destinationLatitude: parseInt(parsedDestination[4]),
+        _id
+      };
+      await (await connection).createQueryBuilder().insert().into(PortalEntity).values(portalDTO).execute();
+      // await portalRepository.save(portalDTO);
     }
   }
 }

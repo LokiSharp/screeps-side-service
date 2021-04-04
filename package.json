@@ -118,6 +118,7 @@
   "dependencies": {
     "@supercharge/promise-pool": "^1.6.0",
     "got": "^11.8.2",
-    "pg": "^8.5.1"
+    "pg": "^8.5.1",
+    "typeorm": "^0.2.32"
   }
 }

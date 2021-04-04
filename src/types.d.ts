@@ -656,6 +656,6 @@ interface Doc {
   _id: string;
 }
 
-interface PortalDoc extends RoomObjects, Doc {
+interface PortalDoc extends RoomObjectDoc {
   other: { disabled?: boolean; destination: { shard?: string; room: string; x?: number; y?: number } };
 }

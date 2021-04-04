@@ -42,4 +42,12 @@ describe("CrossShard test", () => {
     },
     6 * 60 * 60 * 1000
   );
+
+  it(
+    "selectAndInsertPortal",
+    async () => {
+      await crossShard.selectAndInsertPortal();
+    },
+    6 * 60 * 60 * 1000
+  );
 });
