@@ -635,27 +635,3 @@ interface RateLimit {
 
 type RatePeriod = "day" | "hour" | "minute";
 type Method = "GET" | "POST";
-
-interface RoomObjectDoc extends RoomObjects, Doc {
-  id: string;
-  shard: string;
-  type: StructureConstant | "source" | "mineral";
-  room: string;
-  x: number;
-  y: number;
-}
-
-interface RoomDoc extends Doc {
-  room: string;
-  shard: string;
-  terrain: string;
-  updateTime: number;
-}
-
-interface Doc {
-  _id: string;
-}
-
-interface PortalDoc extends RoomObjectDoc {
-  other: { disabled?: boolean; destination: { shard?: string; room: string; x?: number; y?: number } };
-}

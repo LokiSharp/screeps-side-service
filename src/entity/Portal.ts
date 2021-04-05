@@ -27,18 +27,18 @@ export const PortalEntity = new EntitySchema<Portal>({
   columns: {
     id: {
       type: "varchar",
-      nullable: false,
-      length: 32
+      length: 32,
+      nullable: false
     },
     shard: {
       type: "varchar",
-      nullable: false,
-      length: 16
+      length: 16,
+      nullable: false
     },
     room: {
       type: "varchar",
-      nullable: false,
-      length: 8
+      length: 8,
+      nullable: false
     },
     x: {
       type: "smallint",
@@ -71,14 +71,16 @@ export const PortalEntity = new EntitySchema<Portal>({
       nullable: false
     },
     destinationShard: {
+      name: "destination_shard",
       type: "varchar",
-      nullable: false,
-      length: 16
+      length: 16,
+      nullable: false
     },
     destinationRoom: {
+      name: "destination_room",
       type: "varchar",
-      nullable: false,
-      length: 8
+      length: 8,
+      nullable: false
     },
     destinationX: {
       name: "destination_x",
@@ -101,17 +103,19 @@ export const PortalEntity = new EntitySchema<Portal>({
       nullable: false
     },
     destinationLongitude: {
+      name: "destination_longitude",
       type: "smallint",
       nullable: false
     },
     destinationLatitude: {
+      name: "destination_latitude",
       type: "smallint",
       nullable: false
     },
     _id: {
       type: "varchar",
-      nullable: false,
       length: 64,
+      nullable: false,
       unique: true,
       primary: true
     }

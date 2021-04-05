@@ -22,8 +22,7 @@ describe("CrossShard test", () => {
   it(
     "traversalShard",
     async () => {
-      const result = await crossShard.traversalShard("shard0");
-      console.log(result);
+      await crossShard.traversalShard("shard0");
     },
     60 * 60 * 1000
   );
