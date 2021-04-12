@@ -160,8 +160,17 @@ export class RawApi {
    */
   public async auth(email: string, password: string): Promise<void> {
     const authSignInResult = await this.authSignIn(email, password);
+    this.setToken(authSignInResult.token);
+  }
+
+  /**
+   * 设置令牌
+   * @param token 令牌
+   * @return void
+   */
+  public setToken(token: string): void {
     const updatedOptions = {
-      headers: { "x-token": authSignInResult.token, "x-username": authSignInResult.token }
+      headers: { "x-token": token, "x-username": token }
     };
     this.client.defaults.options = got.mergeOptions(this.client.defaults.options, updatedOptions);
   }
