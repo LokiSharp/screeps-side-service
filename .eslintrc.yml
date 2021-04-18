@@ -1,27 +1,22 @@
-env:
-  browser: true
-  es6: true
-  node: true
-extends:
-  - "eslint:recommended"
-  - "google"
-  - "plugin:@typescript-eslint/recommended"
-  - "plugin:@typescript-eslint/recommended-requiring-type-checking"
-  - "plugin:prettier/recommended"
-  - "plugin:import/errors"
-  - "plugin:import/warnings"
-  - "plugin:import/typescript"
-parser: "@typescript-eslint/parser"
+parser: '@typescript-eslint/parser'
 parserOptions:
-  project: tsconfig.json
-  sourceType: module
-plugins:
-  - "@typescript-eslint"
-  - import
-  - deprecation
-settings: { "import/parsers": { "@typescript-eslint/parser": [".ts", ".tsx"] }, "import/resolver": { typescript: {} } }
+  project: 'tsconfig.json'
+  sourceType: 'module'
+plugins: ['@typescript-eslint/eslint-plugin']
+extends:
+  - 'plugin:@typescript-eslint/recommended'
+  - 'plugin:prettier/recommended'
+root: true
+env:
+  node: true
+  jest: true
+ignorePatterns: ['.eslintrc.ts']
 rules:
   valid-jsdoc: [ "error", {
     "requireParamType": false,
     "requireReturnType": false
   } ]
+  '@typescript-eslint/interface-name-prefix': 'off'
+  '@typescript-eslint/explicit-function-return-type': 'off'
+  '@typescript-eslint/explicit-module-boundary-types': 'off'
+  '@typescript-eslint/no-explicit-any': 'off'
