@@ -135,7 +135,6 @@ export class CrossShard {
    * @return Promise<void>
    */
   public async getAllRoomObject(): Promise<void> {
-    // eslint-disable-next-line import/namespace
     await PromisePool.for(["shard0", "shard1", "shard2", "shard3"])
       .withConcurrency(2)
       .process(async shard => await this.traversalShard(shard));
@@ -191,7 +190,6 @@ export class CrossShard {
     const difference = roomNames
       .concat(skipRoomNames)
       .filter(v => !roomNames.includes(v) || !skipRoomNames.includes(v));
-    // eslint-disable-next-line import/namespace
     await PromisePool.for(difference)
       .withConcurrency(100)
       .process(roomName => this.getRoom(roomName, shard));
@@ -504,7 +502,7 @@ export class CrossShard {
    * @param endRoom 终点房间
    * @return void
    */
-  public dijkstra(startRoom: string, endRoom: string): void {
+  public dijkstra(startRoom: string, endRoom: string): { path: string[]; distance: number; totalRooms: number } {
     ret = { path: [], distance: 0, totalRooms: 0 };
 
     // Dijkstra
@@ -547,7 +545,7 @@ export class CrossShard {
 
           break;
         }
-        console.log("top", top.room, this.distance[top.room]);
+        // console.log("top", top.room, this.distance[top.room]);
         for (const nextRoomName in this.distance[top.room]) {
           // eslint-disable-next-line no-prototype-builtins
           if (this.distance[top.room].hasOwnProperty(nextRoomName)) {
@@ -561,16 +559,16 @@ export class CrossShard {
                 });
                 tmpDis[nextRoomName] = top.dis + this.distance[top.room][nextRoomName];
               }
-              console.log("next", {
-                room: nextRoomName,
-                dis: top.dis + this.distance[top.room][nextRoomName]
-              });
+              // console.log("next", {
+              //   room: nextRoomName,
+              //   dis: top.dis + this.distance[top.room][nextRoomName]
+              // });
             }
           }
         }
       }
     }
-    console.log(ret);
+    return ret;
   }
 
   /**
