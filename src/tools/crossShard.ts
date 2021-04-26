@@ -96,6 +96,7 @@ export class CrossShard {
 
   public distance: Record<string, Record<string, number>> = {};
   public portals: Record<string, Record<string, Portal[]>> = {};
+  public portalsCache: Record<string, Record<string, Portal[]>> = {};
 
   /**
    * 遍历 shard
@@ -213,24 +214,29 @@ export class CrossShard {
    * @return Promise<void>
    */
   public async buildPortals(shard: string): Promise<void> {
-    if (!this.portals[shard]) this.portals[shard] = {};
-    const roomObjectRepository = (await connection).getRepository(RoomObjectEntity);
-    (await roomObjectRepository.find({ where: { type: "portal", shard } })).forEach(portal => {
-      const { id, shard, room, x, y } = portal;
-      const other = portal.other as {
-        disabled?: boolean;
-        destination: { shard?: string; room: string; x?: number; y?: number };
-      };
-      this.addRoomPosObject({
-        id,
-        shard,
-        room,
-        x,
-        y,
-        disabled: other.disabled === true,
-        destination: other.destination
+    if (!this.portalsCache[shard]) {
+      if (!this.portals[shard]) this.portals[shard] = {};
+      const roomObjectRepository = (await connection).getRepository(RoomObjectEntity);
+      (await roomObjectRepository.find({ where: { type: "portal", shard } })).forEach(portal => {
+        const { id, shard, room, x, y } = portal;
+        const other = portal.other as {
+          disabled?: boolean;
+          destination: { shard?: string; room: string; x?: number; y?: number };
+        };
+        this.addRoomPosObject({
+          id,
+          shard,
+          room,
+          x,
+          y,
+          disabled: other.disabled === true,
+          destination: other.destination
+        });
       });
-    });
+      this.portalsCache[shard] = this.portals[shard];
+    } else {
+      this.portals[shard] = this.portalsCache[shard];
+    }
 
     // 每个房间的shard内虫洞只保留边界处的洞,并且过滤掉中心房的虫洞
     for (const roomName in this.portals[shard]) {
@@ -516,7 +522,6 @@ export class CrossShard {
         mid: startRoom
       }
     ];
-    let maxDis = 0;
     while (queue.length) {
       // queue.sort((a,b) => (a.dis - b.dis))
       let minIndex = 0;
@@ -529,10 +534,10 @@ export class CrossShard {
       queue.splice(minIndex, 1);
       if (top) {
         if (mid[top.room]) continue;
-        if (top.dis % 100 == 0 && top.dis > maxDis) {
-          maxDis = top.dis;
-          console.log((top.dis / 15).toFixed(2) + "%");
-        }
+        // if (top.dis % 100 == 0 && top.dis > maxDis) {
+        //   maxDis = top.dis;
+        //   console.log((top.dis / 15).toFixed(2) + "%");
+        // }
         dis[top.room] = top.dis;
         mid[top.room] = top.mid;
 
